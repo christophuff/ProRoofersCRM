@@ -1,0 +1,279 @@
+.main-content {
+  padding: 20px 25px;
+  background: #f8f9fa;
+  min-height: calc(100vh - 90px);
+}
+
+.section-placeholder {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  color: #6c757d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-placeholder h2 {
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.task-dashboard {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-title {
+  margin: 0;
+  color: #495057;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.task-count {
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-create-task {
+  background: linear-gradient(45deg, #8b1538, #a91e47);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(139, 21, 56, 0.2);
+}
+
+.btn-create-task:hover {
+  background: linear-gradient(45deg, #a91e47, #8b1538);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(139, 21, 56, 0.3);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.empty-state h3 {
+  margin: 0 0 10px 0;
+  color: #495057;
+}
+
+.tasks-table-container {
+  overflow-x: auto;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tasks-table th {
+  background: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 2px solid #dee2e6;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tasks-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.task-row.status-completed {
+  background: #f8fff9;
+}
+
+.task-row.status-progress {
+  background: #fff9f0;
+}
+
+.task-info {
+  min-width: 200px;
+}
+
+.task-title {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 4px;
+}
+
+.task-description {
+  color: #6c757d;
+  font-size: 13px;
+  line-height: 1.3;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priority-low {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.priority-medium {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.priority-high {
+  background: #ffeaa7;
+  color: #d63031;
+}
+
+.priority-urgent {
+  background: #ffe0e6;
+  color: #e84393;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-progress {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.status-completed {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.status-cancelled {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.task-actions {
+  min-width: 100px;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-start {
+  background: #2196f3;
+  color: white;
+}
+
+.btn-start:hover {
+  background: #1976d2;
+}
+
+.btn-complete {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-complete:hover {
+  background: #388e3c;
+}
+
+.completed-icon {
+  color: #4caf50;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.assigned-to,
+.customer-info {
+  color: #495057;
+  font-weight: 500;
+}
+
+.due-date {
+  color: #6c757d;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .tasks-table {
+    font-size: 12px;
+  }
+  
+  .tasks-table th,
+  .tasks-table td {
+    padding: 10px 8px;
+  }
+}

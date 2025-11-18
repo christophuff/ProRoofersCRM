@@ -1,0 +1,191 @@
+.customer-modal {
+    max-width: 700px;
+}
+
+.customer-form {
+    padding: 20px 25px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-input {
+    padding-right: 5px;
+}
+
+.section-title {
+    margin: 0 0 15px 0;
+    color: #495057;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+}
+
+.customer-dashboard {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-input {
+    padding: 10px 12px;
+    padding-right: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #8b1538;
+    box-shadow: 0 0 0 2px rgba(139, 21, 56, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    pointer-events: none;
+}
+
+.btn-create-customer {
+    background: linear-gradient(45deg, #8b1538, #a91e47);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(139, 21, 56, 0.2);
+}
+
+.btn-create-customer:hover {
+    background: linear-gradient(45deg, #a91e47, #8b1538);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(139, 21, 56, 0.3);
+}
+
+.customers-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.customers-table th {
+    background: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    padding: 15px 12px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.customers-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+.name-primary {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 2px;
+}
+
+.company-name {
+    color: #6c757d;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.contact-info .email {
+    margin-bottom: 2px;
+    color: #495057;
+}
+
+.contact-info .phone {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.address-info .address-line {
+    margin-bottom: 2px;
+    color: #495057;
+}
+
+.address-info .state-zip {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.count-badge {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.created-date {
+    color: #6c757d;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .header-actions {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .customer-modal {
+        width: 95%;
+        margin: 20px;
+    }
+}

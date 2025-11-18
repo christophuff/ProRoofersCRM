@@ -1,0 +1,6 @@
+@ProRoofersCRM.Api_HostAddress = http://localhost:5120
+
+GET {{ProRoofersCRM.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
